@@ -171,6 +171,10 @@ main {
     margin: auto;
 }
 
+.youtube h1, .gmail-1 h1, .gmail-2 h1, .apuntes-majo h1, .github h1, .udemy h1, .alura h1, .instagram h1, .twitter h1, .twitch h1, .inacap h1 {
+    font-size: 1.3em;
+}
+
 @keyframes border {
 
     0%,
