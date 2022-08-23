@@ -182,9 +182,10 @@ main {
     transition: 300ms all;
 }
 
-#buscador:hover {
+#buscador:focus-within {
     transform: scale(1.05);
 }
+
 
 .input-buscador {
     width: 90%;
