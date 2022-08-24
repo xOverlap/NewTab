@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url("images/tony-montana.jpg");
+    background: url("../images/tony-montana.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
