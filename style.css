@@ -275,17 +275,17 @@ main {
         height: 70vh;
     }
 
-    .youtube, .gmail-1, .gmail-2, .apuntes-majo, .github, .udemy, .alura, .instagram, .twitter, .twitch, .inacap, .deepl {
+    .botones {
         min-width: 19vmin;
         min-height: 19vmin;
     }
 
-    .youtube img, .gmail-1 img, .gmail-2 img, .apuntes-majo img, .github img, .udemy img, .alura img, .instagram img, .twitter img, .twitch img, .inacap img, .deepl img {
+    .botones img {
         max-width: 14vmin;
         max-height: 14vmin;
     }
 
-    .youtube h1, .gmail-1 h1, .gmail-2 h1, .apuntes-majo h1, .github h1, .udemy h1, .alura h1, .instagram h1, .twitter h1, .twitch h1, .inacap h1, .deepl h1 {
+    .botones h1 {
         font-size: 1em;
     }
 
