@@ -2,8 +2,6 @@ let input = document.querySelector(".input-buscador");
 
 let boton = document.querySelector(".buscar");
 
-input.focus();
-
 function clear() {
     input.value = "";
 }
