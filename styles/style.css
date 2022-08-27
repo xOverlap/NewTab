@@ -118,6 +118,7 @@ main {
 }
 
 .botones {
+    position: relative;
     width: 15vmin;
     max-width: 100px;
     max-height: 100px;
@@ -131,6 +132,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    transition: 500ms all;
 }
 
 .botones img {
@@ -155,6 +157,7 @@ main {
 }
 
 #buscador:focus-within, .botones:hover {
+    top: -8px;
     box-shadow: 0 3px 5px #000;
     border-radius: 15px;
     background-color: rgba(100, 100, 100, 0.75);
