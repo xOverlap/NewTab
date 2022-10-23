@@ -15,6 +15,10 @@ body {
     background-color: #000
 }
 
+*::selection {
+    color: red;
+}
+
 .glass {
     background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.1) );
     backdrop-filter: blur(10px);
@@ -50,10 +54,6 @@ header {
 
 #clock {
     margin: 20px 20px auto auto;
-}
-
-#clock::selection, #name h1::selection {
-    color: red;
 }
 
 header h1{
