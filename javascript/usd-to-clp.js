@@ -8,14 +8,14 @@ request(url, (error, response, html)=> {
         price.each((i, el)= > {
             const value= $(el).find(".YMlKec").text()
             console.log(value)
+            document.getElementById("converter").innerHTML = "&nbsp;$" + Math.round(value)
+            function display() {
+                document.getElementById("usd-clp").style.display = "flex"
+            }
+            setTimeout(display, 2000)
         })
     }
 });
-document.getElementById("converter").innerHTML = "&nbsp;$" + Math.round(value)
-function display() {
-    document.getElementById("usd-clp").style.display = "flex"
-}
-setTimeout(display, 2000)
 
 
 
