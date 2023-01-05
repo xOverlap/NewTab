@@ -1,26 +1,44 @@
-function conversor() {
-    const options = {
-    method: "GET",
-    headers: {
-        "X-RapidAPI-Key": "7fff036ef7msh436a4865aa48844p14ec0djsn13768417dd06",
-        "X-RapidAPI-Host": "google-finance4.p.rapidapi.com",
-    },
-    };
-
-    fetch(
-      "https://google-finance4.p.rapidapi.com/ticker/?t=USD-CLP&hl=es&gl=ES",
-      options
-    )
-      .then((response) => response.json())
-      .then(
-        (response) =>
-          (document.getElementById("converter").innerHTML = "&nbsp;$" + Math.round(response["price"]["last"]["value"]))
-      );
-
-    function display() {
-        document.getElementById("usd-clp").style.display = "flex";
+const request = require("request")
+const cheerio = require("cheerio")
+const url = "https://www.google.com/finance/quote/USD-CLP?sa=X&ved=2ahUKEwjmhZStrq_8AhXhqZUCHVmPBIIQmY0JegQIBhAc"
+request(url, (error, response, html)=> {
+    if (!error & & response.statusCode == 200) {
+        const $=cheerio.load(html)
+        const price= $(".rPF6Lc")
+        price.each((i, el)= > {
+            const value= $(el).find(".YMlKec").text()
+            console.log(value)
+        })
     }
-    setTimeout(display, 2000);
+});
+document.getElementById("converter").innerHTML = "&nbsp;$" + Math.round(value)
+function display() {
+    document.getElementById("usd-clp").style.display = "flex"
 }
+setTimeout(display, 2000)
+conversor()
 
-conversor();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
